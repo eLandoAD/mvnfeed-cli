@@ -7,6 +7,9 @@ import sys
 
 from .mvnfeed_cli import MvnFeedCLI
 
+# https://stackoverflow.com/a/77834685
+import ssl
+ssl._create_default_https_context = ssl._create_stdlib_context
 
 def main():
     try:
